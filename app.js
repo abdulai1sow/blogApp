@@ -8,7 +8,7 @@ const MongoStore = require('connect-mongo')
 require('dotenv').config()
 
 const app = express()
-port = 5000
+const PORT = process.env.PORT || 5000
 app.use(morgan('dev'))
 app.use(express.json())
 //when ever you need get access to forms
@@ -35,8 +35,8 @@ app.use('/', (req, res) => {
   res.render('pages/Home')
 })
 
-app.listen(port, () => {
-  console.log(`server is running on port: ${port}...`);
+app.listen(PORT, () => {
+  console.log(`server is running on port: ${PORT}...`);
 
   mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
   
