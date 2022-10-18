@@ -25,17 +25,22 @@ export default class Blog extends Component {
                 {" "}
                 <h2>{blog.title}</h2>
               </a>
+
               <p>{blog.body}</p>
+
               <h4>Written by:</h4> <p>{blog.author}</p>
+
               <div className="likes">
                 <h6>4{blog.likes} </h6>
-                <input type="checkbox" name="sponsored" id="" />
-                <p>{blog.timestamps} time</p>
+
+                {/* <input type="checkbox" name="sponsored" id="" /> */}
+                { blog.sponsored ? 'sponsored': null}
+
+                <p> {blog.created_at.getHours()} </p>
               </div>
+
               <div className="buttons">
-                {/* <div className="button">
-                  <a href="">DELETE</a>
-                </div> */}
+                
                 {blog.author === loggedInUser ? (
                   <div className="button">
                     <a href={`/blog/${blog._id}/edit`}>Edit</a>

@@ -12,14 +12,13 @@ export default class Navbar extends Component {
 
         {/* <a href="/user/signup">SIGNIN</a> */}
         {/*<a href="/user/signout">SIGNOUT</a> */}
-        {/* {!loggedInUser ? (
+        {!loggedInUser ? (
           <a href="/user/signin">SIGNIN</a>
           ) : (
           <a href="/user/signout">SIGNOUT</a>
-        )} */}
+        )}
         {loggedInUser && <h6>{loggedInUser}</h6>}
-        {loggedInUser && <a href="/user/signout">SIGNOUT</a>}
-        {/* {loggedInUser && <a href="/user/signin">SIGNIN</a>} */}
+        {/* {loggedInUser && <a href="/user/signout">SIGNOUT</a>} */}
       </nav>
     );
   }
