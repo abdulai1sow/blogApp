@@ -11,7 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "bootstrap": "^5.2.2",
     "connect-mongo": "^4.6.0",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
@@ -20,7 +19,6 @@
     "method-override": "^3.0.0",
     "mongoose": "^6.6.5",
     "react": "^18.2.0",
-    "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
