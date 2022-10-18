@@ -1,0 +1,52 @@
+.container{
+  background-color: aqua;
+  color:blueviolet;
+  width: 400px;
+  text-align: center;
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+.container > img{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: 5px;
+}
+.likes{
+display: flex;
+justify-content: space-around;
+}
+.buttons{
+  display: flex;
+  justify-content: space-around;
+}
+.button{
+  background-color: #fff;
+  width: 65px;
+  height: 30px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.button >a{
+text-decoration: none;
+}
+
+.createBtn{
+  background-color: #444;
+  width: 65px;
+  height: 30px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  color: red;
+}
+.createBtn > a{
+text-decoration: none;
+color: #fff;
+}
+
