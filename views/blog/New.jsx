@@ -24,8 +24,8 @@ export default class New extends Component {
 
           <div>
             <label>sponsored?</label>
-            {/* <input type="checkbox" name="sponsored" /><br /> */}
-            {blog.sponsored ? 'sponsored' : null}
+            <input type="checkbox" name="sponsored" /><br />
+            {/* {blog.sponsored ? 'sponsored' : null} */}
           </div>
 
           <input type="submit" value="post blog" />

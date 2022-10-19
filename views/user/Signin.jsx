@@ -18,6 +18,8 @@ export default function Signin() {
           <input type="password" name="password"  /> <br />
 
           <input type="submit" value='signin' />
+
+          <a href="/user/signup">signup</a>
         </fieldset>
       </form>
     </div>

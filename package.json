@@ -6,11 +6,9 @@
   "scripts": {
     "start": "node app.js"
   },
-
-  "engines":{
+  "engines": {
     "node": "17.3.0"
   },
-
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -24,10 +22,9 @@
     "method-override": "^3.0.0",
     "mongoose": "^6.6.5",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-     "morgan": "^1.10.0"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-   
+    "morgan": "^1.10.0"
   }
 }
