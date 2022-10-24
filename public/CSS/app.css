@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa|Righteous');
 
 body {
-  background: url(https://images.clipartlogo.com/files/istock/previews/8741/87414357-apple-seamless-pastel-colors-pattern-fruits-texture-background.jpg);
+  background-color: #FFF7E9;
   margin: 0;
   font-family: 'Comfortaa', cursive;
 }
@@ -49,4 +49,24 @@ input[type=submit] {
 /* ===============USER============ */
 .container{
   color:aquamarine;
+}
+
+/* ==============SHOW================= */
+/* .show{
+display: flex;
+align-items: center;
+} */
+.showContainer{
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  margin-left: 250px;
+  margin-top: 50px;
+  border: solid 1px #FF731D;
+  text-align: center;
+
+
+
+
+
 }

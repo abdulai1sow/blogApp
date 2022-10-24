@@ -1,12 +1,18 @@
 .container{
-  background-color: aqua;
-  color:blueviolet;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+.card{
+  background-color: #FFF7E9;
+  /* color:blueviolet; */
   width: 400px;
   text-align: center;
   margin-bottom: 15px;
   border-radius: 15px;
 }
-.container > img{
+.card > img{
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -15,10 +21,22 @@
 .likes{
 display: flex;
 justify-content: space-around;
+align-items: center;
 }
 .buttons{
+  background-color:#5F9DF7 ;
   display: flex;
   justify-content: space-around;
+  border-radius: 5px;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+.buttons >a{
+  color: #fff;
+  text-decoration: none;
+}
+.buttons:hover{
+  background-color: #1746A2;
 }
 .button{
   background-color: #fff;
@@ -30,23 +48,75 @@ justify-content: space-around;
   align-items: center;
   cursor: pointer;
 }
-.button >a{
-text-decoration: none;
-}
 
-.createBtn{
+
+/* .createBtn{
   background-color: #444;
   width: 65px;
   height: 30px;
   border-radius: 5px;
   margin-bottom: 5px;
-  display: flex;
   cursor: pointer;
+  display: flex;
   align-items: center;
-  color: red;
-}
-.createBtn > a{
+  align-self: center;
+} */
+/* .createBtn > a{
 text-decoration: none;
 color: #fff;
+} */
+.title{
+  width: auto;
+  background-color:#5F9DF7 ;
+  transition: all 1s ease-in-out;
+  border-radius: 5px;
 }
+.title:hover{
+  background-color: #1746A2;
+}
+.title > a{
+  text-decoration: none;
+  color: #fff;
+}
+.body{
+  font-size: 14px;
+  color: #000;
+  line-height: 24px;
+  margin-top: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  width: 380px;
+  text-align: left;
+  margin-left: 10px;
+}
+.author{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.author > h4{
+  padding-right: 5px;
+  font-size: 15px;
+}
+.author > p{
+  font-weight: 200;
+}
+.like{
+  font-size: 20px;
+}
+.editBtn > a{
+  text-decoration: none;
+}
+.editBtn{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 70px;
+   background-color:#5F9DF7 ;
+  text-align: center;
+  cursor: pointer;
 
+}
