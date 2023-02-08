@@ -28,7 +28,7 @@ router.get('/', async (req, res) => {
 //====render form
 router.get('/new', (req, res) => {
   try {
-    res.render('blog/New')
+    res.render('blog/New' )
   } catch (err) {
     console.log(err);
     res.status(403).send('not found')
